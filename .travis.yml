@@ -49,7 +49,6 @@ _test_gem_pg: &_test_gem_pg
     - bundle exec ruby -e 'require "webdrivers";  Webdrivers::Chromedriver.update; puts Webdrivers::Chromedriver.current_version'
     - ls -la ~/.webdrivers
     - sudo cp  ~/.webdrivers/chromedriver /usr/lib/chromium-browser/chromedriver
-    - bundle exec rake spec:prepare
     - google-chrome --version
     - which google-chrome
     - yarn install
